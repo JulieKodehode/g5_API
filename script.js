@@ -13,7 +13,7 @@ async function fetchCatFact() {
 		console.log(catData);
 
 		// Extract the "fact" property from each object in the "data" array
-		const factsArray = catData.data.map((cat) => cat.fact);
+		const factsArray = catData.data.map((catData) => catData.fact);
 
 		// Find the HTML element with the ID "catFacts"
 		const div = document.querySelector("#catFacts");
